@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFI FOOTBALL</title>
+    <link rel="icon" type="image/x-icon" href="IMAGE/football-svgrepo-com.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+       
+
+        button:disabled,
+        button[disabled] {
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+        }
+
+        #lext-img {
+            padding-top: 1em;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        body{
+            font-family: 'DM Serif Display', serif;
+        }
+    </style>
+</head>
+</head>
+
+<body class="bg-slate-600 container mx-auto px-4 text-white ">
+    <header class="bg-black flex ">
+        <div>
+            <img class="pt-5 w-full h-full" src="IMAGE/Group 12.png" alt="">
+        </div>
+        <div class="mx-5">
+            <h1 class="text-5xl text-orange-400 text-center uppercase  ">List best player in the world</h1>
+            <p class="text-2xl text-green-400 text-center">Bangladesh team will not get Shakib for the next one year if
+                the punishment is upheld As there is no alternative for him, a dark cloud of anxiety has gathered around
+                his visit to India</p>
+        </div>
+
+        <div>
+            <img class="pt-5 w-full h-full" id="lext-img" src="IMAGE/Group 12.png" alt="">
+        </div>
+
+
+    </header>
+    <main>
+        <section>
+
+            <div class="my-5 grid grid-cols-4 gap-4">
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/Rectangle 144 (1).png" alt="">
+                        <h1 id="name-Neymar"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Here Neymar Jr
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                36 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                120 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/Rectangle 144 (2).png" alt="">
+                        <h1 id="name-Kylian"
+                            class=" text-center   mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Kylian Mbappé
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                30 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                100 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/Rectangle 144 (3).png" alt="">
+                        <h1 id="name-Machado"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Vítor Machado
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                10 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                110 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div id="Selected-fild"
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class=" mx-5 px-4 ">
+
+                        <h1 class=" text-2xl text-center text-white mt-2 ">Selected - V</h1>
+                        <ol id="selectList" class="list-decimal">
+
+                        </ol>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section>
+            <div class="my-5 grid grid-cols-4 gap-4">
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/Rectangle 144 (4).png" alt="">
+                        <h1 id="name-Sergio"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Sergio Ramos
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                31 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                140 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60 " src="IMAGE/Rectangle 144 (5).png" alt="">
+                        <h1 id="name-Sanches"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Renato Sanches
+                        </h1>
+                        <div class="flex justify-center">
+                            <h3 class="text-white">
+                                52 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                220 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/download (1).jpg" alt="">
+                        <h1 id="name-DODIS"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            RONAN DODIS
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                36 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                120 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="Budget-fuild"
+                    class="row-span-2 max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+
+                    <div class="mx-1">
+                        <h1 class=" text-2xl text-center text-white mt-2">Budget</h1>
+                        <div class="flex justify-between my-3">
+                            <h3 class="text-lg text-white mt-2">Per Player</h3>
+                            <input id="Per-Player-fuild"
+                                class="w-40 bg-slate-400 rounded-lg text-white font-semibold text" type="tel" name=""
+                                onfocus="this.value=''" value="0">
+                        </div>
+                        <button id="btn-Calculate"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
+                            <p class="flex mx-auto">Calculate</p>
+                        </button>
+                        <h1>Player Expenses: $<span id="Player-Expenses">0</span></h1>
+                        <div class="flex justify-between  my-3">
+                            <h3 class="text-lg text-white mt-2">Manager</h3>
+                            <input id="Manager-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
+                                type="tel" name="" onfocus="this.value=''" value="0">
+                        </div>
+                        <div class="flex justify-between  my-3">
+                            <h3 class="text-lg text-white mt-2">Coach</h3>
+                            <input id="Coach-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
+                                type="tel" name="" onfocus="this.value=''" value="0">
+                        </div>
+                        <button id="btn-Calculate-total"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
+                            <p class="flex mx-auto">Calculate-total</p>
+                        </button>
+                        <div class="flex justify-between">
+                            <h1>Total</h1>
+                            <h1 id="Total-balance"></h1>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/download (2).jpg" alt="">
+                        <h1 id="name-Maradona"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Diego Maradona
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                30 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                150 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/download (3).jpg" alt="">
+                        <h1 id="name-Robert"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Robert Lewandowski
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                31 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                110 Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h-60" src="IMAGE/download.jpg" alt="">
+                        <h1 id="name-Ronaldo"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Cristiano Ronaldo
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                30 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                111Assist
+                            </h3>
+                        </div>
+                        <button id="btn-Neymar"
+                            class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="select-five.js"></script>
+</body>
+
+</html>
